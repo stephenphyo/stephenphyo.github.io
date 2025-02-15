@@ -1,0 +1,30 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("pre").forEach(pre => {
+            // Check if a button already exists to prevent duplicates
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn"); // Add custom class
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied!";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                // Ensure the pre element is positioned relative
+                pre.style.position = "relative";
+
+                // Append button to <pre> only once
+                pre.appendChild(button);
+            }
+        });
+    });
+</script>
