@@ -9,7 +9,7 @@
 
     .container {
         width: 45vw;
-        padding: 2rem 1rem;
+        padding: 2rem;
         background-color: #FAFAFA;
         border-radius: 0.5rem;
     }
@@ -26,6 +26,7 @@
 
     h2 {
         border-bottom: 2px solid rgba(0, 0, 0, 0.4) !important;
+        padding-bottom: 1rem;
     }
 
     pre {
