@@ -1530,6 +1530,77 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
         margin-left: 1rem;
     }
 </style>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0 !important;
+        font-family: -apple-system, "Helvetica Neue", "Times New Roman", serif;
+    }
+
+    .container {
+        width: 45vw;
+        padding: 2rem;
+        background-color: #FAFAFA;
+        border-radius: 0.5rem;
+    }
+
+    h1,
+    h2 {
+        display: block;
+        text-align: center;
+    }
+
+    h1 {
+        border: 0 !important;
+    }
+
+    h2 {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.4) !important;
+        padding-bottom: 1rem;
+    }
+
+    pre {
+        position: relative;
+        background: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+
+    code {
+        display: block;
+        white-space: pre-wrap;
+    }
+
+    .copy-btn {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 5px 10px;
+        font-size: 11px;
+        cursor: pointer;
+        background: #8A8A8A;
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
+
+    .copy-btn:hover {
+        background: #6A6A6A;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        width: 500px;
+    }
+
+    .shortcut {
+        margin-left: 1rem;
+    }
+</style>
 
     </head>
     <body class="vscode-body vscode-light">
@@ -3894,8 +3965,2377 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
     let newPath = '/' + segments.join('/');
     document.getElementById("backLink").setAttribute("href", newPath);
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Copy button
+        document.querySelectorAll("pre").forEach(pre => {
+            if (!pre.querySelector(".copy-btn")) {
+                let button = document.createElement("button");
+                button.innerText = "Copy";
+                button.classList.add("copy-btn");
+                button.onclick = function () {
+                    let codeText = pre.querySelector("code").innerText;
+                    navigator.clipboard.writeText(codeText).then(() => {
+                        button.innerText = "Copied";
+                        button.classList.add("copied");
+
+                        setTimeout(() => {
+                            button.innerText = "Copy";
+                            button.classList.remove("copied");
+                        }, 1500);
+                    });
+                };
+
+                pre.style.position = "relative";
+                pre.appendChild(button);
+            }
+        });
+    });
+
+    // Back link
+    let path = window.location.pathname;
+    let segments = path.split('/').filter(segment => segment !== "");
+    if (segments.length > 1) {
+        segments.pop();
+    }
+    let newPath = '/' + segments.join('/');
+    document.getElementById("backLink").setAttribute("href", newPath);
+</script>
 
     </div>
+</div>
 </div>
 </div>
 </div>
