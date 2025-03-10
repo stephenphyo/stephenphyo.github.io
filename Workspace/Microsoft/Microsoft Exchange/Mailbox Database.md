@@ -2,6 +2,8 @@
 
 ## Mailbox Database
 
+![Microsoft Exchange](https://s3.us-east-1.amazonaws.com/stephenphyo.github.io/microsoft/microsoft-exchange/microsoft-exchange-0001.webp)
+
 ### <u>**Rename Mailbox Database**</u>
 
 - By default, a **unique generated** mailbox database is created.
