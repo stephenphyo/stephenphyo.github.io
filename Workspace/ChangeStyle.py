@@ -68,7 +68,7 @@ def modify_html_files(directory, injection_file_1, injection_file_2):
                 print(f"Replaced original file: {file_path}")
 
 if __name__ == "__main__":
-    directory_to_search = r"./Oracle/Oracle SQL"
+    directory_to_search = r"./Microsoft/Microsoft SQL"
     injection_file_path_1 = "style.css"
     injection_file_path_2 = "script.js"
     modify_html_files(directory_to_search, injection_file_path_1, injection_file_path_2)

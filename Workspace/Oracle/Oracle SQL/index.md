@@ -1,5 +1,9 @@
-# Oracle SQL
+# Oracle
 
-![Oracle SQL](https://logos-world.net/wp-content/uploads/2020/09/Oracle-Symbol.png)
+## Oracle SQL
 
-<span class="shortcut">[1. Pluggable Databases (PDBs)](https://stephenphyo.github.io/Oracle/Oracle%20SQL/PDBs)</span>
+![s](https://logos-world.net/wp-content/uploads/2020/09/Oracle-Symbol.png)
+
+[1. Oracle Home Directory](https://stephenphyo.github.io/orcle/oracle-sql/oracle-home)
+
+[2. Pluggable Databases (PDBs)](https://stephenphyo.github.io/orcle/oracle-sql/pdbs)
