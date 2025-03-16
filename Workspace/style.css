@@ -34,7 +34,7 @@ h1 {
 
 h2 {
     border-bottom: 2px solid rgba(0, 0, 0, 0.4) !important;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.75rem;
     margin-bottom: 2rem;
     font-size: 28px !important;
     color: #3498DB;
@@ -46,6 +46,10 @@ h3 {
 
 h4 {
     font-size: 18px !important;
+}
+
+h5 {
+    font-size: 16px !important;
 }
 
 iframe {
@@ -86,14 +90,16 @@ code {
 img {
     display: block;
     margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 img[alt=xxl] {
-    width: 90%;
+    width: 100%;
 }
 
 img[alt=xl] {
-    width: 75%;
+    width: 80%;
 }
 
 .navbar {
