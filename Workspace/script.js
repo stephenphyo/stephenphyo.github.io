@@ -1,4 +1,5 @@
 <script>
+// Custom Script
     document.addEventListener("DOMContentLoaded", function () {
 
         // Copy button
