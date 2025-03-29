@@ -61,7 +61,7 @@ mysql -uroot -p
 ```mysql
 CREATE DATABASE zabbix character set utf8mb4 COLLATE utf8mb4_bin;
 CREATE USER zabbix@localhost IDENTIFIED BY 'password';
-CREATE USER zabbix@'%'' IDENTIFIED BY 'password';
+CREATE USER zabbix@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON zabbix.* TO zabbix@localhost;
 GRANT ALL PRIVILEGES ON zabbix.* TO zabbix@'%';
 SET GLOBAL log_bin_trust_function_creators = 1;
