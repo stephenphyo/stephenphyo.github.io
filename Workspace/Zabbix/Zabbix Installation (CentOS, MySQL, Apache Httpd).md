@@ -61,9 +61,9 @@ mysql -uroot -p
 ```mysql
 CREATE DATABASE zabbix character set utf8mb4 COLLATE utf8mb4_bin;
 CREATE USER zabbix@localhost IDENTIFIED BY 'password';
-CREATE USER zabbix@'%'' IDENTIFIED BY 'password';
+CREATE USER zabbix@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON zabbix.* TO zabbix@localhost;
-GRANT ALL PRIVILEGES ON zabbix.* TO zabbix@'%'';
+GRANT ALL PRIVILEGES ON zabbix.* TO zabbix@'%';
 SET GLOBAL log_bin_trust_function_creators = 1;
 ```
 
@@ -89,8 +89,6 @@ SET GLOBAL log_bin_trust_function_creators = 0;
 
 ### 4. Configure Zabbix Server
 
-#### 4.1. Zabbix Server Configuration
-
 ##### Zabbix Server Config: /etc/zabbix/zabbix_server.conf
 
 ##### Zabbix Web Config: /etc/zabbix/web/zabbix.conf.php
@@ -105,10 +103,10 @@ vi /etc/zabbix/zabbix_server.conf
 DBHost=<mysql-host-ip-or-dns>
 DBName=zabbix # If default name is used
 DBUser=zabbix # If default username is used
-DBPassowrd=<password>
+DBPassword=<password>
 DBPort=3306 # If default port is used
 
-ListenIP=<zabbix-server-ip-only>
+ListenIP=0.0.0.0
 ListenPort=10051
 ```
 
@@ -196,8 +194,8 @@ semodule -i httpd_custom.pp
 
 #### Default Username and Password
 
-Username: **Admin** <br>
-Passowrd: **zabbix**
+Username: **Admin** 
+Password: **zabbix**
 
 ### 9. Troubleshooting
 
