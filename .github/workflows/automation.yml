@@ -1,0 +1,49 @@
+name: Collect HTML and Generate Indexes
+
+on:
+  push:
+    paths:
+      - '**.html'
+      - '**.md'
+      - '**.yml'
+      - '**.yaml'
+      - '**.sh'
+      - '**.py'
+
+jobs:
+  organize:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Find and copy HTML files to root
+      run: |
+        mkdir -p _html_tmp
+        find . -type f -name '*.html' ! -path './_html_tmp/*' -exec cp {} _html_tmp/ \;
+        cp _html_tmp/*.html . || true
+        rm -rf _html_tmp
+
+    - name: Generate index.md for each folder
+      run: |
+        find . -type d ! -path './.git*' | while read dir; do
+          index_file="$dir/index.md"
+          echo "" > "$index_file"
+          for item in "$dir"/*; do
+            if [ -d "$item" ]; then
+              name=$(basename "$item")
+              echo "- [$name]($name/)" >> "$index_file"
+            elif [ -f "$item" ]; then
+              name=$(basename "$item")
+              echo "- [$name]($name)" >> "$index_file"
+            fi
+          done
+        done
+
+    - name: Commit changes
+      run: |
+        git config user.name "github-actions"
+        git config user.email "actions@github.com"
+        git add .
+        git commit -m "Automated HTML copy and index generation" || echo "No changes to commit"
+        git push
